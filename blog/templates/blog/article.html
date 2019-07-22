@@ -1,5 +1,15 @@
 {% extends 'blog/base.html' %}
+{% load static %}
+{% block title %}
+{{ article.title }}
+{% endblock %}
+{% block head %}
+<link href="{% static "tinymce/css/prism.css" %}" rel="stylesheet">
+<script src="{% static "tinymce/js/prism.js" %}"></script>
+{% endblock %}
 {% block content %}
-<h1>{{ article.title }}</h1>
-<p>{{ article.content }}</p>
+<div class="blog_content">
+    <h1>{{ article.title }}</h1>
+    {{ article.content|safe }}
+</div>
 {% endblock %}

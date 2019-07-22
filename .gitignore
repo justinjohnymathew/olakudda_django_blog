@@ -1,3 +1,4 @@
-blog/migrations
+blog/migrations/0001_initial.py
+blog/migrations/__pycache__
 olakudda/__pycache__
 blog/__pycache__

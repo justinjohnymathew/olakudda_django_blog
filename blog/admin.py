@@ -1,6 +1,16 @@
 from django.contrib import admin
 from .models import Article
 
-admin.site.register(Article)
+from tinymce.widgets import TinyMCE
+from django.db import models
+class ArticleAdmin(admin.ModelAdmin):
+    fieldsets = [
+        ("Title", {'fields': ["title"]}),
+        ("Content", {"fields": ["content"]})
+    ]
+    formfield_overrides = {
+        models.TextField: {'widget': TinyMCE()},
+        }
 
-# Register your models here.
+admin.site.register(Article,ArticleAdmin)
+

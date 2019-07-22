@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    color:rgb(53, 122, 187);
+}
+a:hover{
+    color: rgb(128, 62, 62);
+}
+
+.blog_content{
+    max-width: 900px;
+    margin: auto;
+}
+h1{
+    font-size: 50px;
+}
+li{
+    list-style: none;
+}
