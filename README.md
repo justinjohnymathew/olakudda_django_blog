@@ -1,39 +1,18 @@
-# olakudda_django_blog
+# Dajngo Basic Blog
+This is a basic blog application created using django
+Inorder to run this blog create a virtual enviornment and install all the required libraries.
+## Steps
 
-`pip install virtualenv`   
+ 
+#### 1.Creating the virtual enviornment
 
+    virtualenv blog
+#### 2.Activating the virtual enviornment
 
-above one is used ony if virtualenv is not installed  
+    cd blog 
+    ./Scripts/activate
+the above command is used on windows
+#### Cloning the Repository
 
-create a virtualenviornment  
-`virtualenv olakudda`  
+    git clone https://github.com/justinjohnymathew/olakudda_django_blog.git
 
-`cd olakudda`  
-
-activate the virtual enviornment  
-`./Scripts/activate`    
-
-install django    
-`pip install django`  
-
-copy the git repo to this folder  
-that is the present working directory is `olakudda_django_blog`  
-cd olakudda_django_blog  
-
-now the directory is olakudda_django_blog  
-the below steps are for creating database  
-`python manage.py makemigrations`  
-
-`python manage.py migrate`  
-
-
-the below code is for creating a superuser aka(mutalali) for the blog  
-`python manage.py createsuperuser`  
-
-now its time to run the server  
-`python manage.py runserver`  
-
-admin page can be accesed at localhost:8000/admin  
-login and add some blog contents  
-
-the templates of the blog are defined in blog/templates/blog  
