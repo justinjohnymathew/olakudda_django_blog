@@ -1,6 +1,6 @@
 # Dajngo Basic Blog
 This is a basic blog application created using django
-Inorder to run this blog create a virtual enviornment and install all the required libraries.
+Inorder to run this blog create a virtual enviornment and install all the required libraries. 
 ## Steps
 
  
